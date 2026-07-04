@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxx Collective Design Studios</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; color: #1a1a1a; background: #F5F1E8; }
+        header { padding: 2rem 5%; border-bottom: 2px solid #DC143C; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 900; color: #DC143C; }
+        .hero { padding: 5rem; text-align: center; background: white; }
+        .hero h1 { font-size: 3rem; color: #DC143C; margin-bottom: 1.5rem; font-weight: 900; }
+        .hero p { font-size: 1.1rem; color: #666; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .cta-btn { background: #DC143C; color: white; padding: 1rem 2.5rem; text-decoration: none; font-weight: 700; border: none; cursor: pointer; font-size: 1rem; }
+        .cta-btn:hover { opacity: 0.9; }
+        section { padding: 5rem; }
+        .three-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+        .col { background: #F5F1E8; padding: 2rem; border-left: 4px solid #DC143C; }
+        .col h3 { color: #DC143C; margin-bottom: 1rem; font-size: 1.3rem; }
+        h2 { font-size: 2.5rem; color: #DC143C; margin-bottom: 1.5rem; font-weight: 900; }
+        .case-study { background: white; margin-bottom: 2rem; padding: 2rem; border: 1px solid #e0e0e0; }
+        .case-study h3 { color: #DC143C; margin-bottom: 1rem; }
+        .case-study ul { list-style: none; margin-left: 1rem; }
+        .case-study li { margin-bottom: 0.5rem; color: #666; }
+        .case-study li:before { content: "• "; color: #DC143C; font-weight: bold; margin-right: 0.5rem; }
+        .team-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2rem; margin-top: 2rem; }
+        .team-member { text-align: center; }
+        .avatar { width: 100px; height: 100px; background: #DC143C; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold; }
+        .team-member h4 { color: #1a1a1a; font-size: 1rem; margin-bottom: 0.3rem; }
+        .team-member p { color: #DC143C; font-size: 0.85rem; font-weight: 600; }
+        .cta-red { background: #DC143C; color: white; padding: 5rem; text-align: center; }
+        .cta-red h2 { color: white; }
+        .cta-red p { color: white; font-size: 1.1rem; margin-bottom: 2rem; }
+        footer { background: #1a1a1a; color: white; padding: 3rem 5%; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; }
+        footer h4 { color: #DC143C; margin-bottom: 1rem; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; }
+        footer p, footer a { color: #ccc; font-size: 0.95rem; margin-bottom: 0.5rem; text-decoration: none; }
+        footer a:hover { color: #DC143C; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .three-cols { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: repeat(2, 1fr); }
+            footer { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">FOXX</div>
+        <nav style="display: flex; gap: 2rem;">
+            <a href="#what" style="color: #1a1a1a; text-decoration: none; font-weight: 600;">What We Do</a>
+            <a href="#work" style="color: #1a1a1a; text-decoration: none; font-weight: 600;">Work</a>
+            <a href="#team" style="color: #1a1a1a; text-decoration: none; font-weight: 600;">Team</a>
+            <a href="#contact" style="color: #1a1a1a; text-decoration: none; font-weight: 600;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>We Curate African Fashion Through Strategy, Production & Growth.</h1>
+        <p>Foxx Collective Design Studios is your integrated creative partner. We bring brand strategy, world-class creative execution, and digital growth together — ensuring every touchpoint tells the same story.</p>
+        <button class="cta-btn">Let's Talk</button>
+    </section>
+
+    <section id="what" style="background: white;">
+        <h2>What Foxx Does</h2>
+        <div class="three-cols">
+            <div class="col">
+                <h3>Branding</h3>
+                <p>Brand strategy & positioning. Visual identity systems. Creative direction for collections. Founder positioning. We define who you are before we design how you look.</p>
+            </div>
+            <div class="col">
+                <h3>Creative Dynamics</h3>
+                <p>Campaign production. Lookbooks & fashion films. Art direction & styling. Shoot management. We create world-class content that tells your brand story beautifully.</p>
+            </div>
+            <div class="col">
+                <h3>Digital Marketing</h3>
+                <p>Digital strategy & content calendars. Social media management & growth. Community building. Soft PR & influencer alignment. We amplify your brand digitally.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2>Our Work</h2>
+        
+        <div class="case-study">
+            <h3>Virgoli Fashion — Positioning Problem Solved</h3>
+            <p><strong>Problem:</strong> Unclear positioning, wrong-fit customers, weak margins</p>
+            <p><strong>What We Did:</strong> Clarified brand positioning, created design brief, repositioned targeting</p>
+            <p style="margin-top: 1rem;"><strong style="color: #DC143C;">Results:</strong></p>
+            <ul>
+                <li><strong>+40%</strong> right-fit customer acquisition in 90 days</li>
+                <li>Clearer collection direction</li>
+                <li>Stronger margins from aligned audience</li>
+            </ul>
+            <p style="margin-top: 1rem; color: #999; font-size: 0.9rem;">Investment: ₦4.2m project</p>
+        </div>
+
+        <div class="case-study">
+            <h3>Lhambi Shoes — "The Bond Edit" Creative Excellence</h3>
+            <p><strong>Problem:</strong> Create visually striking campaign video + commercially ready lookbook. Limited budget, high stakes.</p>
+            <p><strong>What We Did:</strong> Developed creative concept, directed broadcast-quality video, produced 20+ hero shots, art directed every frame</p>
+            <p style="margin-top: 1rem;"><strong style="color: #DC143C;">Results:</strong></p>
+            <ul>
+                <li>Professional campaign video launched</li>
+                <li><strong>₦7m+ in sales</strong> from product debut event</li>
+                <li>Media coverage in fashion publications</li>
+                <li><strong>50k+ views</strong> on campaign video</li>
+            </ul>
+            <p style="margin-top: 1rem; color: #999; font-size: 0.9rem;">Investment: ₦7m | ROI: 1x in first drop</p>
+        </div>
+
+        <div class="case-study">
+            <h3>Knorr — Jollof Day 2026 Digital Campaign</h3>
+            <p><strong>Problem:</strong> Build cultural moment. Drive awareness + trial across multiple platforms.</p>
+            <p><strong>What We Did:</strong> Campaign narrative, 15+ content pieces, 10 micro-influencer partnerships, multi-platform distribution, ad management</p>
+            <p style="margin-top: 1rem;"><strong style="color: #DC143C;">Results:</strong></p>
+            <ul>
+                <li><strong>6.2m reach</strong> | 31m+ impressions</li>
+                <li><strong>4.1% engagement</strong> (very high for FMCG)</li>
+                <li><strong>₦35m+ estimated sales impact</strong></li>
+                <li><strong>42% brand awareness lift</strong></li>
+            </ul>
+            <p style="margin-top: 1rem; color: #999; font-size: 0.9rem;">Investment: ₦8.5m ad + ₦2m (Foxx) | ROI: 4.1x</p>
+        </div>
+    </section>
+
+    <section id="team" style="background: white;">
+        <h2>Our Team</h2>
+        <p style="color: #666; margin-bottom: 2rem;">Five brilliant women. One unified vision. Supported by teams in Nigeria, Ghana, and London.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="avatar">I</div>
+                <h4>Isi Braimoh</h4>
+                <p>Creative Director</p>
+            </div>
+            <div class="team-member">
+                <div class="avatar">C</div>
+                <h4>Coco Anetoe Sokie</h4>
+                <p>Editor & Content Lead</p>
+            </div>
+            <div class="team-member">
+                <div class="avatar">C</div>
+                <h4>Chika Johna</h4>
+                <p>Digital Lead</p>
+            </div>
+            <div class="team-member">
+                <div class="avatar">S</div>
+                <h4>Sandra Uwaoluetan</h4>
+                <p>Experiential Design</p>
+            </div>
+            <div class="team-member">
+                <div class="avatar">M</div>
+                <h4>Moyo Alabi</h4>
+                <p>Legal Partner</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: white;">
+        <h2>Why Integration Matters</h2>
+        <p style="color: #666; font-size: 1.1rem; margin-bottom: 1.5rem;">Most brands hire three separate vendors. They don't talk to each other. Beautiful work, but scattered.</p>
+        <p style="color: #666; font-size: 1.1rem; margin-bottom: 1.5rem;"><strong>Foxx is different.</strong> One creative partner who owns the entire ecosystem. Brand strategy informs creative direction. Creative direction informs digital narrative. <strong>Everything tells one story.</strong></p>
+        <p style="color: #DC143C; font-size: 1.1rem; font-weight: 700;">Result: Better ROI. Faster growth. Coherent brand.</p>
+    </section>
+
+    <section class="cta-red" id="contact">
+        <h2>Let's Transform Your Brand</h2>
+        <p>African fashion deserves world-class creative infrastructure. We're building it. Let's build it together.</p>
+        <button class="cta-btn">Get in Touch</button>
+    </section>
+
+    <footer>
+        <div>
+            <h4>About Foxx</h4>
+            <p>Foxx Collective Design Studios curates African fashion brands through integrated branding, creative production, and digital growth.</p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: hello@foxxcollective.com</p>
+            <p>Instagram: @foxxcollective</p>
+            <p>LinkedIn: Foxx Collective Design Studios</p>
+        </div>
+        <div>
+            <h4>Location</h4>
+            <p>Lagos, Nigeria</p>
+            <p style="font-size: 0.85rem; color: #999; margin-top: 1rem;">© 2026 Foxx Collective Design Studios</p>
+        </div>
+    </footer>
+</body>
+</html>
